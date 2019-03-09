@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/a"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <RadioButton
+                    style="@style/BottomStyle"
+                    android:drawableTop="@drawable/ic_findpeople"
+                    android:text="找人" />
+
+                <RadioButton
+                    style="@style/BottomStyle"
+                    android:drawableTop="@drawable/ic_city"
+                    android:text="城市" />
+
+                <RadioButton
+                    style="@style/BottomStyle"
+                    android:drawableTop="@drawable/ic_game"
+                    android:text="游戏" />
+
+                <RadioButton
+                    style="@style/BottomStyle"
+                    android:drawableTop="@drawable/ic_live"
+                    android:text="直播" />
+
+                <RadioButton
+                    style="@style/BottomStyle"
+                    android:drawableTop="@drawable/ic_moive"
+                    android:text="电影" />
+
+                <RadioButton
+                    style="@style/BottomStyle"
+                    android:drawableTop="@drawable/ic_more_1"
+                    android:text="更多" />
+            </RadioGroup>
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/viewpager"
+                    android:background="#33000000"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/image_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/app_name"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/point_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"></LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="194dp"
+                        android:src="@drawable/find_1" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="251dp"
+                        android:src="@drawable/find_2" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="209dp"
+                        android:src="@drawable/find_4" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="182dp"
+                        android:src="@drawable/find_5" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:src="@drawable/find_6" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

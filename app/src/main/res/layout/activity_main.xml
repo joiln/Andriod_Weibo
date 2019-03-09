@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:showDividers="end">
+
+    <!--顶部导航栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#F5F5F5">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <RadioButton
+                android:id="@+id/camera"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:button="@null"
+                android:drawableRight="@drawable/ic_camera"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center">
+            <RadioGroup
+                android:id="@+id/radioGroup_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <RadioButton
+                    android:id="@+id/home_focus"
+                    style="@style/TopStyle"
+                    android:text="关注" />
+
+                <RadioButton
+                    android:id="@+id/home_hot"
+                    style="@style/TopStyle"
+                    android:text="热门" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right">
+            <RadioButton
+                android:id="@+id/plus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:paddingRight="10dp"
+                android:drawableRight="@drawable/ic_plus"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--主浏览界面-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/mainViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9">
+
+        </android.support.v4.view.ViewPager>
+
+
+    <!--底部导航栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#F5F5F5">
+
+        <RadioGroup
+            android:id="@+id/bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/home"
+                style="@style/BottomStyle"
+                android:drawableTop="@drawable/home_img_selector"
+                android:text="首页" />
+
+            <RadioButton
+                android:id="@+id/video"
+                style="@style/BottomStyle"
+                android:drawableTop="@drawable/video_img_selector"
+                android:text="视频" />
+
+            <RadioButton
+                android:id="@+id/find"
+                style="@style/BottomStyle"
+                android:drawableTop="@drawable/find_img_selector"
+                android:text="发现" />
+
+            <RadioButton
+                android:id="@+id/news"
+                style="@style/BottomStyle"
+                android:drawableTop="@drawable/new_img_selector"
+                android:text="消息" />
+
+            <RadioButton
+                android:id="@+id/mine"
+                style="@style/BottomStyle"
+                android:drawableTop="@drawable/mine_img_selector"
+                android:text="我" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

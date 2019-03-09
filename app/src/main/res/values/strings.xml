@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">微博</string>
+    <string name="action_settings">Settings</string>
+    <string name="content">距离开学已经有一段时间了，想必大家也制定好了本学
+    期的目标吧，有梦想就要努力去实现。愿大家的未来都能像今天的太阳般熠熠生辉</string>
+    <string name="publish">一分钟以前</string>
+    <string name="user_name">重科小智</string>
+</resources>
